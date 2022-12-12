@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+  position: fixed;
+  background-color:#fff;
+  height: 8vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 30%;
+  margin-right: 5vw;
 }
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.footercontainer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+
+/* /////UserSignUp//// */
+label {
+  /* color: rgb(24, 3, 3); */
+  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  margin: auto;
+  max-width: 600px;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 10px 18px ;
+  font: size 1.2rem; ;
+  color: #110101 ;
+  background-color: #fff;
+  border: 2px solid #cf4520;
+  box-shadow: 10px 10px #cf4520;
+}
+
+form input {
+  border-radius: 100px;
+}
+
+form textarea {
+  border-radius: 28px;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  box-shadow: 10px 10px rgb(207 69 32), 15px 15px 0px 4px rgb(255 142 4);
+}
+
+form button.btn {
+  width: 100%;
+  margin: 4% auto;
+}
+
+/* form input:focus, form textarea:focus {
+  outline-color: #000;
+} */
+
+/* sign up */
